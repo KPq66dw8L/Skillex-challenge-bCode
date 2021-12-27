@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-container {
+  @apply w-40 h-full rounded-2xl bg-center bg-cover transition-all;
+}
+
+.card-container:hover {
+  @apply w-60;
+}
+
+.card-hitbox {
+  @apply h-80 w-40 relative;
+}
+
+.card-passive {
+  @apply group-hover:hidden h-20 bg-gray-900 w-3/4 absolute bottom-10 left-0;
+}
+
+.card-active {
+  @apply h-80 hidden group-hover:block relative bg-gradient-to-t to-transparent from-gray-900 rounded-2xl;
+}
+
+.card-active:hover {
+  @apply w-60;
+}
+
+/* @screen md {
+  .btn {
+    @apply inline-block;
+  }
+} */
