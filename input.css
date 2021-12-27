@@ -6,6 +6,24 @@
   @apply w-40 h-full rounded-2xl bg-center bg-cover transition-all;
 }
 
+.con1:hover {
+  background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #111827),
+    url('../assets/dami-adebayo-k6aQzmIbR1s-unsplash.jpg');
+}
+
+.con2:hover {
+  background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #111827),
+    url('../assets/freestocks-_3Q3tsJ01nc-unsplash.jpg');
+}
+
+.con3:hover {
+  background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #111827),
+    url('../assets/jon-ly-Xn7GvimQrk8-unsplash.jpg');
+}
+
 .card-container:hover {
   @apply w-60;
 }
@@ -19,12 +37,12 @@
 }
 
 .card-active {
-  @apply h-80 hidden group-hover:block relative bg-gradient-to-t to-transparent from-gray-900 rounded-2xl;
+  @apply w-0 h-0 group-hover:w-60 group-hover:h-full hidden group-hover:flex relative rounded-2xl;
 }
 
-.card-active:hover {
+/* .card-active:hover {
   @apply w-60;
-}
+} */
 
 /* @screen md {
   .btn {
